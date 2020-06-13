@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-//import SplashScreen from 'react-native-splash-scr'
+import MainScreen from './src/components/MainScreen'
 import {
   SafeAreaView,
   StyleSheet,
@@ -44,7 +44,7 @@ const App: () => React$Node = () => {
 	       
 	      </Scene>
 	    </Router> */}
-      <LoginScreen></LoginScreen>
+      <MainScreen></MainScreen>
     </>
   );
 };
