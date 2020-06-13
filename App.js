@@ -45,7 +45,8 @@ const App: () => React$Node = () => {
 	       
 	      </Scene>
 	    </Router> */}
-      <MainScreen></MainScreen>
+      <LoginScreen></LoginScreen>
+      {/* <MainScreen></MainScreen> */}
     </>
   );
 };
