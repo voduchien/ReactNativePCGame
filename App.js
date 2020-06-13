@@ -15,6 +15,7 @@ import {
   View,
   Text,
   StatusBar,
+  ImageBackground,
 } from 'react-native';
 import { Router, Scene, Actions, ActionConst } from 'react-native-router-flux';
 import {

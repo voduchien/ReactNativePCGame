@@ -2,9 +2,8 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:width="300dp"
-        android:height="300dp"
-        android:drawable="@drawable/background_splash"
-        android:gravity="center" />
+        
+        android:drawable="@drawable/splashscreen"
+        android:gravity="center_horizontal|center_vertical" />
 
 </layer-list>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/antdesign" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/entypo" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/evilicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/feather" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/fontawesome" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/fontawesome5_brands" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/fontawesome5_regular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/fontawesome5_solid" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/fontisto" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/foundation" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/ionicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/materialcommunityicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/materialicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/octicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/roboto" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/roboto_medium" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/simplelineicons" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/zocial" />
+</font-family>
