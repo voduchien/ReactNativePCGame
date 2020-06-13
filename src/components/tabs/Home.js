@@ -30,7 +30,7 @@ export default class Home extends Component {
             </CardItem>
           </Card>
           <Card style={{flex: 0}}>
-            <CardItem>
+            <CardItem bordered>
               <Left>
                 <Body>
                   <Text>Contacts</Text>
