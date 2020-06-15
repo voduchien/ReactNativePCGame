@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import MainScreen from './src/components/MainScreen'
+import MainScreen from './src/screens/MainScreen'
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,28 +24,13 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import LoginScreen from './src/components/LoginScreen';
-
+import LoginScreen from './src/screens/LoginScreen';
 const App: () => React$Node = () => {
-  // useEffect(()=>{
-  //   SplashScreen.hide();
-  // },[]);
   return (
     <>
       {Platform.OS === 'ios' && <StatusBar barStyle="light-content" />}
-      {/* <Router>
-	      <Scene key="root">
-	        <Scene key="loginScreen"
-	          component={LoginScreen}
-	        	animation='fade'
-	          hideNavBar={true}
-	          initial={true}
-	        />
-	       
-	      </Scene>
-	    </Router> */}
+      
       <LoginScreen></LoginScreen>
-      {/* <MainScreen></MainScreen> */}
     </>
   );
 };
