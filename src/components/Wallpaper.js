@@ -6,7 +6,9 @@ import {
   Text,
   Image,
   Dimensions,
-  ScrollView
+  KeyboardAvoidingView,
+  TouchableWithoutFeedback,
+  Keyboard
 } from 'react-native';
 import { Container, Header, Content, Input, Item, Icon,Button,ListItem,CheckBox,Body } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
@@ -14,11 +16,13 @@ import imgBackground from '../images/loginbgimage_mobile.png'
 import imgLogo from '../images/game_plan_logo.png'
 import imgLogoMobile from '../images/logo_mobile.png'
 import { TextInput } from 'react-native-gesture-handler';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 const {width:WIDTH}=Dimensions.get('window');
 const Background = ({ children }) => (
   <Container>
-<ImageBackground resizeMode='cover' source={imgBackground} style={{ flex: 1 }}>
-  <Grid>
+    <ImageBackground resizeMode='cover' source={imgBackground} style={{ flex: 1 }}>
+  
+      <Grid>
             <Row size={20}>
             
             </Row>
@@ -38,8 +42,15 @@ const Background = ({ children }) => (
                   </Col>
                 </Row>
             </Row>
+            
             <Row size={20}>
-              <View style={{ justifyContent: 'center', alignItems: 'center'}}>
+              
+                
+              <KeyboardAvoidingView
+        contentContainerStyle={{ flexGrow: 1 }} scrollEnabled
+      >
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={{ justifyContent: 'center', alignItems: 'center'}}>
                 {/* <Icon name='user' type='FontAwesome' style={styles.inputIcon} color={'rgba(0,0,0,0.7)'}></Icon> */}
                 <TextInput placeholder={'Email'} 
                 placeholderTextColor={'rgba(0,0,0,0.7)'}
@@ -47,12 +58,17 @@ const Background = ({ children }) => (
                 style={styles.input}
                 />
                 
-                <TextInput placeholder={'Password'} 
+                <TextInput secureTextEntry={true}  placeholder={'Password'} 
                 placeholderTextColor={'rgba(0,0,0,0.7)'}
                 underlineColorAndroid='transparent'
                 style={styles.inputpass}/>
-              </View>
+            
               
+            </View>
+            
+          
+          </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
             </Row>
             <Row size={10} style={{minHeight:30,paddingLeft:20}}>
               
@@ -85,7 +101,9 @@ const Background = ({ children }) => (
               
             </Row>
           </Grid>
+           
           </ImageBackground> 
+
   </Container>
  
 );
@@ -135,7 +153,12 @@ const styles = StyleSheet.create({
   },
   inputIcon:{
     position:'absolute'
-  }
+  },
+  inner: {
+    padding: 24,
+    flex: 1,
+    justifyContent: "space-around"
+  },
 });
 
 export default memo(Background);
