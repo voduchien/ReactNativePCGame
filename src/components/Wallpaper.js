@@ -61,11 +61,9 @@ const Background = ({ children }) => (
                 <TextInput secureTextEntry={true}  placeholder={'Password'} 
                 placeholderTextColor={'rgba(0,0,0,0.7)'}
                 underlineColorAndroid='transparent'
-                style={styles.inputpass}/>
-            
+                style={styles.inputpass}/>           
               
-            </View>
-            
+            </View>           
           
           </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
